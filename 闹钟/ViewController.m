@@ -106,7 +106,7 @@
 }
 //语音播报
 - (void)voiceAnnouncementsText:(NSString *)text
-{AVAudioSessionInterruptionTypeKey
+{
     AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:text];
     [self.synthesizer speakUtterance:utterance];
 }
